@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        PlaneGrids.com Project
+        Index Page
+
+        Author: Aaron Burkett
+        Date:   6/11/2025
+    
+        Filename: index.html
+     -->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="plane trivia, trivia, plane, flight, airline, flights" />
+    <meta name="description" content="A game to match Plane models, makes, Airlines, etc." />
+    <meta name="viewport" content="shrink-to-fit=no, initial-scale=1, width=device-width, user-scalable=yes, maximum-scale=5.0" />
+    <meta name="author" content="Aaron Burkett" />
+    <title>PlaneGrids | Daily Aviation Grid Game</title>
+    <link href="layout.css" rel="stylesheet" />
+    <link href="grids.css" rel="stylesheet" />
+    
+    <link rel="icon" type="png" href="logo.png">
+</head>
+
+<body>
+
+    <!-- Makes: Airbus, Boeing, Embraer, -->
+     <!-- Models: Concorde, etc -->
+      <!-- Airlines: -->
+       <!-- Airports: JFK, ATL, etc-->
+
+
+
+      <!-- Some Examples: 
+        (British Airways, Airbus) = Concorde
+        (American Airlines, Boeing) = 737
+        (Delta, Boeing) = 747
+        (JFK -> Singapore) = Singapore Airlines
+        (LAX -> SYD) = Qantas
+       
+      Boom supersonic,
+      -->
+    <!-- <header> -->
+		<nav class="horizontalNavigation">
+  <div class="horizontalNavigation-row">
+    <a class="nav-title"><strong>PlaneGrids.com</strong></a>
+    <div class="nav-buttons">
+      <button class="dark-mode" id="dark-mode-btn" aria-label="Dark Mode">
+        <img id="dark-mode-icon" src="images/moon.png" alt="Toggle dark mode" style="width:22px;height:22px;">
+      </button>
+      <button class="login" id="login-btn" aria-label="Login"><span></span>Login</button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+    <!-- </header> -->
+
+
+  
+
+  <p></p>
+  <h1></h1>
+
+  <div id="game-board">
+      <!-- Top row (non-interactive) -->
+      <div class="cell non-interactive" id="rarity-cell">
+          <span class="score-label">Rarity score:</span>
+          <span class="score-value" id="score"><strong>0.000</strong></span>
+      </div>
+      <div class="cell non-interactive"></div>
+      <div class="cell non-interactive"></div>
+      <div class="cell non-interactive"></div>
+      <!-- Second row -->
+      <div class="cell non-interactive"></div>
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <!-- Third row -->
+      <div class="cell non-interactive"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <!-- Fourth row -->
+      <div class="cell non-interactive"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+  </div>
+
+  <div class="center-container">
+      <button id="previous">⬅️ Previous</button>
+      <button id="reset">Reset Game</button>
+      <button id="next">Next ➡️</button>
+  </div>
+
+
+  <!-- Famous plane crash mode-->
+ 
+
+  <!-- Modal Overlay -->
+<div id="cell-modal-overlay" style="display:none;">
+  <div id="cell-modal">
+    <div class="modal-row modal-row-top">
+      <span class="modal-possible-aircraft">🔍</span>
+      <input type="text" class="modal-guess-input" placeholder="" />
+    </div>
+    <div class="modal-row modal-row-middle">
+      <span class="modal-attributes"></span>
+    </div>
+    <div class="modal-row modal-row-bottom">
+      <!-- Empty for now -->
+    </div>
+  </div>
+</div>
+
+<!-- Completion Modal Overlay -->
+<div id="completion-modal-overlay" style="display:none;">
+  <div id="completion-modal">
+    <button id="completion-close-btn" aria-label="Close" class="completion-close-btn">&times;</button>
+    <div class="completion-modal-content">
+      <h2>Congratulations!</h2>
+      <p>Thank you for playing todays PlaneGrid!</p>
+    </div>
+    <div class="completion-modal-actions">
+      <button id="completion-share-btn">Share</button>
+      <button id="completion-play-again-btn">Play Again</button>
+    </div>
+  </div>
+</div>
+
+  <!-- <script src="day1.js"></script> -->
+  
+  <script src="darkMode.js"></script>
+  <script src="gameLoader.js"></script>
+    </body>
+
+    <footer>
+      <p><i>A game by</i></p>
+      <p><strong>PlaneGrids.com</strong></p>
+      <p>Created by Aaron Burkett</p>
+
+      <p>Copyright &copy; 2025 PlaneGrids.com | All Rights Reserved.</p>
+
+      <div class="footer-links">
+      <a href="https://linkedin.com/in/aaronburkettdev" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/burk3405" target="_blank" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+      </a>
+      <a href="https://instagram.com/planegrids/" target="_blank" aria-label="Instagram">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://x.com/PlaneGrids" target="_blank" aria-label="X (Twitter)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X (Twitter)" />
+    </div>
+
+
+    <p id="feedback"><a href="https://docs.google.com/forms/d/e/1FAIpQLScmRYXhWNDv45KLS0ocsYMOXd1VxGFhk1uDmdykjp8dQ6O0zA/viewform?usp=header" target="_blank">Feedback</a> | <a href="privacy.html">Privacy policy</a></p>
+
+    </footer>
+    
+    </html>

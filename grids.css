@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+   PlaneGrids.com Project
+   Index Page
+
+   CSS Grid Page
+   
+   Grid Styling for index.html
+   
+   Filename: grids.css
+*/
+
+/* Gameboard Styling */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 130px);   /* Increased from 100px to 130px */
+    grid-template-rows: repeat(4, 130px);      /* Increased from 100px to 130px */
+    gap: 8px;
+    margin: 32px auto;
+    width: fit-content;
+    padding: 24px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+}
+
+.cell {
+    width: 130px;              /* Increased from 100px */
+    height: 130px;             /* Increased from 100px */
+    border: 2px solid #333;
+    border-radius: 8px;       /* Increased from default/none to 24px for rounder corners */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    padding: 0;
+}
+
+.cell.non-interactive {
+    background: transparent;
+    border: none;
+    cursor: default;
+}
+
+#rarity-cell {
+    flex-direction: column;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+#reset {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.animated {
+    animation: pop 0.3s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.6); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.cell.non-interactive {
+    font-size: 1.4rem; /* Adjust as needed */
+    /*font-weight: bold;  Optional */
+}
+
+.cell.non-interactive:hover {
+    background-color: transparent !important;
+}
+
+/*
+
+.cell.non-interactive img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+*/

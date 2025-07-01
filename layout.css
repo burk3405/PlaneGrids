@@ -1,0 +1,1014 @@
+@charset "utf-8";
+
+/*
+   PlaneGrids.com Project
+   Index Page
+
+   CSS Stlyes Page
+   
+   Typography and Color Styles for index.html
+   
+   Filename: layout.css
+
+*/
+
+
+/* HTML and Body Styles */
+html {
+   background-color: #f4f4f7;
+}
+
+html.dark-mode-active {
+    background-color: #18181c !important;
+}
+
+body {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1c1c1e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2em;
+ }
+ 
+ /* Page Header Styles */
+ body > header > img {
+    display: block;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+ }
+ 
+ body > header > nav.horizontalNavigation li {
+    width: 20%;
+ }
+ 
+ /* Horizontal Navigation List Styles */
+ nav.horizontalNavigation > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e5e5ea;
+    border-radius: 8px;
+ }
+ 
+ nav.horizontalNavigation > ul > li {
+    flex-grow: 1;
+ }
+ 
+ nav.horizontalNavigation a {
+    display: block;
+    font-size: 1.1em;
+    padding: 0.75em 0;
+    text-align: center;
+    text-decoration: none;
+    color: #1c1c1e;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+ }
+ 
+ nav.horizontalNavigation a:hover {
+    background-color: #d1d1d6;
+ }
+ 
+ /* Heading Styles */
+ h1 {
+    margin-top: 5px;
+    justify-self: center;
+ }
+ 
+ body > header h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    color: #1c1c1e;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+ }
+ 
+ /* Paragraph Styles */
+ p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: center;
+ }
+ 
+ /* Image Styles */
+ img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+ }
+ 
+ 
+ 
+ /* Definition List Styles */
+ dl {
+    font-size: 1em;
+    margin: 1em 0;
+ }
+ 
+ dl > dt {
+    color: #333;
+    font-weight: 600;
+    margin-top: 0.5em;
+ }
+ 
+ dl > dd {
+    margin-left: 1em;
+    color: #666;
+ }
+ 
+ /* Footer Styles */
+ footer {
+    color: #6e6e73;
+    background-color: #f2f2f7;
+    font-size: 0.95em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+    margin-top: 2em;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+ }
+
+ button#reset {
+    display: flex;
+    justify-content: center;
+    background-color: #007aff;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 122, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+ button#previous {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #007aff;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 122, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+button#next {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #007aff;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 122, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+button#reset:hover {
+    background-color: #005ecb;
+    box-shadow: 0 4px 8px rgba(0, 122, 255, 0.4);
+}
+
+button#reset:active {
+    background-color: #004a9f;
+    box-shadow: 0 2px 4px rgba(0, 122, 255, 0.2);
+    transform: scale(0.97);
+}
+
+button#previous:hover {
+    background-color: #f0f0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button#previous:active {
+    background-color: #e0e0e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(0.97);
+}
+button#next:hover {
+    background-color: #f0f0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button#next:active {
+    background-color: #e0e0e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(0.97);
+}
+
+
+.center-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-top: 2em;
+    gap: 0; /* Remove gap so only the buttons have spacing */
+}
+
+.center-container button#previous {
+    justify-self: end;
+    margin-right: 10px;
+    order: unset;
+}
+
+.center-container button#reset {
+    grid-column: 2;
+    justify-self: center;
+    order: unset;
+}
+
+.center-container button#next {
+    justify-self: start;
+    margin-left: 10px;
+    order: unset;
+}
+
+/* About Us Page */
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-column,
+.right-column {
+    background-color: #f2f2f7;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.left-column h1,
+.right-column h1 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    color: #1c1c1e;
+    display: flex;
+    justify-content: center;
+}
+
+.left-column p,
+.right-column p {
+    color: #3a3a3c;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: scale(1.2);
+}
+
+.footer-links img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  border-radius: 0;
+}
+
+.footer-links a:hover img {
+  filter: grayscale(0%);
+}
+
+footer #feedback a {
+  color: inherit;           /* Inherit the footer text color */
+  text-decoration: none;    /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+footer #feedback a:hover {
+  color: #007aff;           /* Optional: add a hover color */
+}
+
+/* Center the leaderboard section */
+.leaderboard {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #f8f9fb;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+/* Style the table */
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.leaderboard th {
+    background: #e6eaf3;
+    color: #1c1c1e;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.leaderboard tr:nth-child(even) {
+    background: #f4f6fa;
+}
+
+.leaderboard tr:nth-child(odd) {
+    background: #fff;
+}
+
+.leaderboard tr:hover {
+    background: #e0f0ff;
+    transition: background 0.2s;
+}
+
+/* Modal overlay and blur */
+#cell-modal-overlay {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cell-modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  min-width: 500px;
+  max-width: 90vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.modal-row {
+  width: 89.5%;
+  padding: 0.5em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-row-top {
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95em;
+  color: #888;
+  min-height: 38px;
+  gap: 1em;
+}
+
+.modal-possible-aircraft {
+  color: #888;
+  font-size: 0.98em;
+  flex: 1;
+  max-width: 25px;
+}
+
+.modal-guess-input {
+  flex: 2;
+  padding: 0.3em 0.7em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.modal-row-middle {
+  border-bottom: 1px solid #e0e0e0;
+  min-height: 48px;
+  font-size: 1.1em;
+  color: #222;
+  background: #f7f7fa;
+}
+
+.modal-row-bottom {
+  min-height: 36px;
+}
+
+/* Style for the dark mode button */
+button.dark-mode {
+    background: transparent !important;
+    color: inherit;
+    border: none;
+    border-radius: 10px;   /* Match hamburger button */
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-size: 1.8em;
+    transition: none;
+}
+button.dark-mode img {
+    width: 33px;   /* 22px * 1.5 = 33px */
+    height: 33px;  /* 22px * 1.5 = 33px */
+    display: block;
+    pointer-events: none;
+}
+
+/* Style for the login button */
+button.login {
+    background: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(0,122,255,0.12);
+    font-size: 1.2em;
+
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+button.login:hover {
+    background: #005ecb;
+}
+
+/* Style for the hamburger menu button */
+button.hamburger {
+    background: #fff;
+    border: none;           /* Remove border */
+    border-radius: 10px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+    cursor: pointer;
+    transition: background 0.2s;    /* Remove border-color transition */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 0;
+    position: relative;
+}
+button.hamburger:hover {
+    background: #f0f0f0;
+}
+/* Hamburger icon lines */
+button.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #333;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+
+.horizontalNavigation {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start;
+  gap: 0.2em;
+  padding: 0.5em 1.5em;
+  background: #fff;
+  border-radius: 14px; /* or your preferred radius */
+}
+
+/* Row for title and buttons */
+.horizontalNavigation-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between title and buttons */
+  width: 100%;
+  position: relative;
+}
+
+.nav-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em; /* Match nav-links */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Match nav-links */
+  text-decoration: none;
+  color: #222;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.3em; /* Doubled from 0.5em to 1em */
+  z-index: 2;
+}
+
+/* Nav links stay horizontal but are now on their own line */
+.horizontalNavigation .nav-links {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5em;
+}
+
+.modal-match-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  width: 100%;
+  max-height: 260px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  padding-right: 0;
+  margin-right: 0;
+  border-radius: 12px;      /* Add this for consistent corners */
+  overflow: hidden;         /* Ensures content and scrollbar are clipped */
+  background: #fff;         /* Optional: ensure background is set */
+}
+
+body.dark-mode-active .modal-match-list {
+  background: #23232a !important;
+  border-radius: 12px !important;   /* Ensure same radius in dark mode */
+  overflow: hidden;                 /* Ensures content and scrollbar are clipped */
+}
+
+.modal-match-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.4em 0.8em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.modal-select-btn {
+  background: #007aff !important;
+  color: #fff !important;
+  border: none;
+  margin-left: 1em;
+  padding: 0.2em 0.8em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Disabled Select button for wrong guess */
+.modal-select-btn:disabled,
+body.dark-mode-active .modal-select-btn:disabled {
+  background: #888 !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* Remove dark mode override for .modal-select-btn */
+/*
+
+body.dark-mode-active .modal-select-btn {
+  background: #007aff !important;
+  color: #fff !important;
+}
+*/
+
+.cell-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Keep caption at the bottom */
+  align-items: center;
+  overflow: hidden;
+}
+
+.cell-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.cell-content img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.cell-caption {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 0.375em;
+  font-family: inherit;
+  font-weight: normal;
+  height: 2em;
+  min-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 6px 6px;
+  box-sizing: border-box;
+  padding: 0 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.cell-rarity-badge {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%; /* 1/4 of the cell width */
+  min-width: 36px;
+  max-width: 65px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 0.375em; /* Match .cell-caption */
+  font-family: inherit;
+  font-weight: normal;
+  padding: 0.2em 0.005em;
+  border-radius: 6px;
+  z-index: 2;
+  box-sizing: border-box;
+  white-space: nowrap;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  pointer-events: none;
+}
+
+body.dark-mode-active {
+  background-color: #18181c;
+  color: #f4f4f7;
+}
+
+body.dark-mode-active html, 
+body.dark-mode-active:root, 
+body.dark-mode-active body {
+    background-color: #18181c !important;
+}
+
+body.dark-mode-active html {
+    background-color: #18181c !important;
+}
+
+body.dark-mode-active nav.horizontalNavigation,
+body.dark-mode-active .two-column-layout,
+body.dark-mode-active .leaderboard,
+body.dark-mode-active #game-board,
+body.dark-mode-active .cell,
+body.dark-mode-active .cell.non-interactive,
+body.dark-mode-active .cell-content,
+body.dark-mode-active .modal-row,
+body.dark-mode-active #cell-modal {
+  background-color: #23232a !important;
+  color: #f4f4f7 !important;
+}
+
+body.dark-mode-active footer {
+  background-color: #23232a !important;
+  color: #f4f4f7 !important;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode-active .cell-caption {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+body.dark-mode-active .modal-select-btn {
+  background: #444 !important;
+  color: #fff !important;
+}
+
+body.dark-mode-active .footer-links a,
+body.dark-mode-active .footer-links a:visited {
+  color: #f4f4f7 !important;
+}
+
+body.dark-mode-active .footer-links img {
+  filter: grayscale(0%) brightness(0.8) invert(1);
+}
+
+
+
+body.dark-mode-active .nav-links {
+  background-color: #363640 !important;
+}
+
+body.dark-mode-active .nav-links a {
+  color: #f4f4f7 !important;
+  background-color: transparent !important;
+}
+
+body.dark-mode-active .nav-links a:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+body.dark-mode-active button.hamburger {
+  background: #23232a !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode-active button.hamburger span {
+  background: #f4f4f7 !important;
+}
+
+/* Turns Previous and Next buttons dark mode */
+button#previous.dark-mode-active,
+button#next.dark-mode-active {
+   background-color: #444 !important;
+   color: #f4f4f7 !important;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+}
+
+body.dark-mode-active button#previous,
+body.dark-mode-active button#next {
+   background-color: #444 !important;
+   color: #f4f4f7 !important;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+}
+
+body.dark-mode-active .leaderboard {
+    background: #23232a !important;
+    color: #f4f4f7 !important;
+}
+
+body.dark-mode-active .leaderboard table {
+    background: #23232a !important;
+    color: #f4f4f7 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+body.dark-mode-active .leaderboard th {
+    background: #363640 !important;
+    color: #f4f4f7 !important;
+}
+
+body.dark-mode-active .leaderboard td {
+    background: transparent !important; /* Let tr background show through */
+    color: #f4f4f7 !important;
+}
+
+body.dark-mode-active .leaderboard tr:nth-child(even) {
+    background: #282832 !important;
+}
+
+body.dark-mode-active .leaderboard tr:nth-child(odd) {
+    background: #23232a !important;
+}
+
+body.dark-mode-active .leaderboard tr:hover {
+    background: #33334a !important;
+    transition: background 0.2s;
+}
+
+body.dark-mode-active .modal-match-list {
+    background: #23232a !important;
+}
+
+body.dark-mode-active .modal-match-row {
+    background: #363640 !important;
+    color: #f4f4f7 !important;
+}
+
+body.dark-mode-active .modal-match-row span {
+    color: #f4f4f7 !important;
+}
+
+/* Conflicting Rule, commented out to avoid overriding dark mode styles */
+/*
+
+body.dark-mode-active .modal-match-row .modal-select-btn {
+    background: #444 !important;
+    color: #fff !important;
+}
+
+*/
+
+body.dark-mode-active .modal-guess-input {
+    background: #23232a !important;
+    color: #f4f4f7 !important;
+    border: 1px solid #444 !important;
+}
+
+body.dark-mode-active #cell-modal {
+    background: #23232a !important;
+    color: #f4f4f7 !important;
+}
+
+body.dark-mode-active .nav-title {
+  color: #f4f4f7 !important;
+  background: transparent !important; /* or set a dark background if you want */
+  text-shadow: 0 1px 2px #000; /* optional: adds subtle contrast */
+}
+
+body.dark-mode-active #game-board {
+    background: #23232a !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  text-align: center;
+}
+
+button.dark-mode img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  pointer-events: none;
+}
+
+body.dark-mode-active #dark-mode-icon {
+  filter: invert(1) brightness(1.6);
+}
+
+body.dark-mode-active #dark-mode-icon.inverted-icon {
+  filter: invert(1) brightness(1.6);
+}
+
+/* Completion Modal Styles */
+#completion-modal-overlay {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#completion-modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  min-width: 340px;
+  max-width: 90vw;
+  padding: 2em 1.5em 1.5em 1.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completion-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 2em;
+  color: #888;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.completion-modal-content {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.completion-modal-actions {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  width: 100%;
+}
+
+.completion-modal-actions button {
+  background: #007aff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.completion-modal-actions button:hover {
+  background: #005ecb;
+}
+
+body.dark-mode-active #completion-modal {
+  background: #23232a !important;
+  color: #f4f4f7 !important;
+}
+body.dark-mode-active .completion-close-btn {
+  color: #f4f4f7 !important;
+}
+body.dark-mode-active .completion-modal-actions button {
+  background: #444 !important;
+  color: #fff !important;
+}
+body.dark-mode-active .completion-modal-actions button:hover {
+  background: #007aff !important;
+}
+
+button.dark-mode,
+button.login,
+button.hamburger {
+    margin-right: 0; /* Remove extra margin */
+}
+
+body.dark-mode-active button.dark-mode,
+body.dark-mode-active button.hamburger {
+    background: #363640 !important;
+}
+
+/* LinkedIn specific styles in dark mode */
+body.dark-mode-active .footer-links a[aria-label="LinkedIn"] img {
+  filter: grayscale(0%) brightness(1) !important;
+  /* LinkedIn blue: #0A66C2 */
+  background: none !important;
+}
+
+body.dark-mode-active .footer-links a[aria-label="LinkedIn"]:hover img {
+  filter: grayscale(0%) brightness(1.1) !important;
+}
+
+body.dark-mode-active main {
+    background: #23232a !important;
+    color: #f4f4f7 !important;
+}
+
+#game-board .cell.non-interactive:not(#rarity-cell):hover {
+    cursor: help;
+}
+

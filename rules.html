@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        PlaneGrids.com Project
+        Rules Page
+
+        Author: Aaron Burkett
+        Date:   6/19/2025
+    
+        Filename: rules.html
+     -->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="plane trivia, trivia, plane, flight, airline, flights" />
+    <meta name="description" content="A game to match Plane models, makes, Airlines, etc." />
+    <meta name="viewport" content="shrink-to-fit=no, initial-scale=1, width=device-width, user-scalable=yes, maximum-scale=5.0" />
+    <meta name="author" content="Aaron Burkett" />
+    <title>PlaneGrids | Daily Aviation Grid Game</title>
+    <link href="layout.css" rel="stylesheet" />
+    <link href="grids.css" rel="stylesheet" />
+    
+    <link rel="icon" type="png" href="logo.png">
+</head>
+
+<body>
+    <!-- <header> -->
+		<nav class="horizontalNavigation">
+  <div class="horizontalNavigation-row">
+    <a class="nav-title"><strong>PlaneGrids.com</strong></a>
+    <div class="nav-buttons">
+      <button class="dark-mode" id="dark-mode-btn" aria-label="Dark Mode">
+        <img id="dark-mode-icon" src="images/moon.png" alt="Toggle dark mode" style="width:22px;height:22px;">
+      </button>
+      <button class="login" id="login-btn" aria-label="Login"><span></span>Login</button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+    <!-- </header> -->
+
+
+
+
+
+
+
+
+
+<!-- Leaderboard Section -->
+    <section class="leaderboard">
+        <h1>How to Play</h1>
+        <p></p>
+        
+        <p>Select an aircraft for each square that meets the criteria for both the row and column value. Categories are independent, so that aircraft doesn't need to record both categories together.</p>
+        <p>For example, if the categories are Manufactured by Airbus and Operated by Emirates, the aircraft must be both currently in Emirates fleet and manufactured by Airbus.</p>
+        <p>There are no limits on the number of guesses per square. <!-- Need a hint? Switch to hint mode to be shown six airplanes, one is the most common guessed by other players. --> </p>
+        <p>You can change a submitted Aircraft by clicking the square again, even after the game is complete.</p>
+
+        <h2>Rarities</h2>
+
+        <p>An aircraft's rarity indicates how often they're guessed compared to all guesses made by airplanes around the world:</p>
+
+        <ul>
+            <li>Common (>15%)</li>
+            <li>Bronze (10 - 15%)</li>
+            <li>Silver (5 - 10%)</li>
+            <li>Gold (1 - 5%)</li>
+            <li>Galaxy (0.1 - 1%)</li>
+            <li>🦄 Unicorn (&lt;0.1%)</li>
+        </ul>
+        
+        <!--
+            <p>*Multiple aircraft can be unicorns for the same square at the same time. E.g. If there are 100 valid answers for a square, and the rarest aircraft has been guessed by 5 users, then all other aircraft guessed 5 times will also be unicorns.</p>
+        -->
+<!--
+<h2>Reverse Mode 🔥</h2>
+
+In Reverse Mode, your goal is to guess the most common player for each square instead of the rarest. Guesses are ranked from 1st to 6th most common. Any guesses outside that range are marked with 🥶.
+
+Rarity colors are reversed — but the most common player has a unique 🔥 design instead of the unicorn.
+
+
+Fire unicorn (1st, most common player)
+
+Galaxy (2nd)
+
+Blue (3rd)
+
+Gold (4th)
+
+Silver (5th)
+
+Bronze (6th)
+
+🥶
+Outside top 6
+
+You can toggle Reverse Mode on or off anytime during a game.
+
+Example category combinations
+
+Remember, cateogories are completely independent from one another!
+
+Team & Team
+
+
+A player must have recorded at least 1 regular or playoff game with each team. It does not have to be the same season.
+
+Teammate & Team
+
+
+
+A player must have recorded at least 1 regular or playoff game with the team, and 1 regular or playoff game with the teammate. It does not have to be the same season, nor does the game with the teammate need to be with the team.
+
+Teammate & Stat/Accolade
+
+
+40+ Points
+(Game)
+For a player to qualify for a 'Teammate/Coach & Stat/Accolade' square, that player must have recorded at least 1 regular or playoff game with the teammate/coach and qualify for the stat/accolade.
+
+It does not have to be the same season regardless if the Stat/Accolade is Career or Season.
+
+Stat/Accolade & Team
+
+
+100+ Assists
+(Season)
+A player must have recorded at least 1 regular or playoff game with the team and qualify for the stat/accolade. The stat/accolate does not need to be achieved with that team.
+
+    -->
+
+    </section>
+
+    <script src="day1.js"></script>
+    
+    <script src="darkMode.js"></script>
+
+</body>
+
+<footer>
+  <p><i>A game by</i></p>
+  <p><strong>PlaneGrids.com</strong></p>
+  <p>Created by Aaron Burkett</p>
+  <p>Copyright &copy; 2025 PlaneGrids.com | All Rights Reserved.</p>
+  <div class="footer-links">
+      <a href="https://linkedin.com/in/aaronburkettdev" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/burk3405" target="_blank" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+      </a>
+      <a href="https://instagram.com/planegrids/" target="_blank" aria-label="Instagram">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://x.com/PlaneGrids" target="_blank" aria-label="X (Twitter)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X (Twitter)" />
+    </div>
+  <p id="feedback"><a href="https://docs.google.com/forms/d/e/1FAIpQLScmRYXhWNDv45KLS0ocsYMOXd1VxGFhk1uDmdykjp8dQ6O0zA/viewform?usp=header" target="_blank">Feedback</a> | <a href="privacy.html">Privacy policy</a></p>
+</footer>
+</html>

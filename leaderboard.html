@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        PlaneGrids.com Project
+        Leaderboard Page
+
+        Author: Aaron Burkett
+        Date:   6/18/2025
+    
+        Filename: leaderboard.html
+     -->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="plane trivia, trivia, plane, flight, airline, flights" />
+    <meta name="description" content="A game to match Plane models, makes, Airlines, etc." />
+    <meta name="viewport" content="shrink-to-fit=no, initial-scale=1, width=device-width, user-scalable=yes, maximum-scale=5.0" />
+    <meta name="author" content="Aaron Burkett" />
+    <title>PlaneGrids | Daily Aviation Grid Game</title>
+    <link href="layout.css" rel="stylesheet" />
+    <link href="grids.css" rel="stylesheet" />
+    
+    <link rel="icon" type="png" href="logo.png">
+</head>
+
+<body>
+
+    <!-- <header> -->
+		<nav class="horizontalNavigation">
+  <div class="horizontalNavigation-row">
+    <a class="nav-title"><strong>PlaneGrids.com</strong></a>
+    <div class="nav-buttons">
+      <button class="dark-mode" id="dark-mode-btn" aria-label="Dark Mode">
+        <img id="dark-mode-icon" src="images/moon.png" alt="Toggle dark mode" style="width:22px;height:22px;">
+      </button>
+      <button class="login" id="login-btn" aria-label="Login"><span></span>Login</button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+    <!-- </header> -->
+
+
+
+
+
+
+
+
+
+<!-- Leaderboard Section -->
+    <section class="leaderboard">
+        <h1>Leaderboard</h1>
+        <p>Check out the top players and their scores! Sign up to post your score!</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Rarity score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>1</td>
+                    <td>Aaron</td>
+                    <td>1.41</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>PlaneGuy747</td>
+                    <td>1.80</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>John Doe</td>
+                    <td>5.45</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Jane Doe</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Scyther</td>
+                    <td>28.91</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Add more rows as needed -->
+
+    </section>
+    <!-- End of leaderboard section -->
+
+    <script src="day1.js"></script>
+    
+    <script src="darkMode.js"></script>
+
+    
+
+</body>
+
+<footer>
+  <p><i>A game by</i></p>
+  <p><strong>PlaneGrids.com</strong></p>
+  <p>Created by Aaron Burkett</p>
+  <p>Copyright &copy; 2025 PlaneGrids.com | All Rights Reserved.</p>
+  <div class="footer-links">
+      <a href="https://linkedin.com/in/aaronburkettdev" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/burk3405" target="_blank" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+      </a>
+      <a href="https://instagram.com/planegrids/" target="_blank" aria-label="Instagram">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://x.com/PlaneGrids" target="_blank" aria-label="X (Twitter)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X (Twitter)" />
+    </div>
+  <p id="feedback"><a href="https://docs.google.com/forms/d/e/1FAIpQLScmRYXhWNDv45KLS0ocsYMOXd1VxGFhk1uDmdykjp8dQ6O0zA/viewform?usp=header" target="_blank">Feedback</a> | <a href="privacy.html">Privacy policy</a></p>
+</footer>
+</html>
